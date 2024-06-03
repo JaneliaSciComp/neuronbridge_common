@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "neuronbridge_common"
+version = "0.0.1"
+authors = [
+  { name="Rob Svirskas", email="svirskasr@hhmi.org" },
+]
+description = "Library of common utility functions for Python"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["boto3",
+                "pymongo==4.4.0",
+                "simple_term_menu"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/JaneliaSciComp/neuronbridge_common"
